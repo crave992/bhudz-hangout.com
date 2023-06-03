@@ -1,0 +1,20 @@
+#banner {
+  position: relative;
+  background-image: url('/images/banner-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  &.banner-height {
+    @include devices(md) {
+      height: 750px;
+    }
+  }
+  .pizza{
+    max-width: 1306px;
+    width: 100%;
+    height: auto;
+    margin: 90px auto 0;
+  }
+}
