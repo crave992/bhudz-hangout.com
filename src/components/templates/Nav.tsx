@@ -109,7 +109,7 @@ const Navigation = () => {
               <Link href="/reviews" className="block text-gray-800 px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 uppercase hover:font-bold">Reviews</Link>
             </li>
             <li className={IsActive('/menu') ? 'active' : ''}>
-              <Link href="/menu" className="block text-gray-800 px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 uppercase hover:font-bold">Menu</Link>
+              <Link href="/menu" className="disabled block text-gray-800 px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 uppercase hover:font-bold">Menu</Link>
             </li>
             <li className={IsActive('/contact-us') ? 'active' : ''}>
               <Link href="/contact-us" className="block text-gray-800 px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 uppercase hover:font-bold">Contact Us</Link>

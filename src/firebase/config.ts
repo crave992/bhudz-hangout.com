@@ -3,14 +3,14 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBTAM1j23nqyGmPVXk7mFGcbYmXHD33Rok",
-  authDomain: "hangout-b9708.firebaseapp.com",
-  databaseURL: "https://hangout-b9708-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "hangout-b9708",
-  storageBucket: "hangout-b9708.appspot.com",
-  messagingSenderId: "289487710198",
-  appId: "1:289487710198:web:4511590019bdf9efca49d7",
-  measurementId: "G-Z4R2K9C1YL"
+  apiKey: "AIzaSyAg15MnjCxo4nBx3z_2E0hYb7GywdVAVF0",
+  authDomain: "bhudz-hangout-calleuno.firebaseapp.com",
+  databaseURL: "https://bhudz-hangout-calleuno-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "bhudz-hangout-calleuno",
+  storageBucket: "bhudz-hangout-calleuno.appspot.com",
+  messagingSenderId: "271343841690",
+  appId: "1:271343841690:web:eb091c48fce266aca0ca23",
+  measurementId: "G-81KJDLD4LQ"
 };
 
 if (!firebase.apps.length) {
