@@ -1,5 +1,5 @@
 import { SocialIcon } from "react-social-icons";
-import Nav from "./Nav";
+import Navigation from "./Nav";
 export const Header = () => {
   return  (
     <header className="flex flex-wrap flex-column">
@@ -29,7 +29,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <Nav/>
+      <Navigation/>
     </header>
   )
 }

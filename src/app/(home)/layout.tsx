@@ -1,5 +1,5 @@
 import Banner from '@/components/templates/Banner'
-import '../../../public/styles/globals.scss'
+import '@/assets/styles/globals.scss'
 import { Header } from '@/components/templates/Header'
 
 export default function RootLayout({

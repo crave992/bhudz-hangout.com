@@ -5,7 +5,7 @@ import Link from "next/link"
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-const Navigation = () => {
+export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -14,7 +14,7 @@ const Navigation = () => {
 
   const IsActive = (pathname: string) => usePathname() === pathname;
   return (
-    <nav className="bg-gray-100 w-full fixed top-0 left-0 right-0 md:sticky">
+    <nav className="bg-gray-100 w-full fixed top-0 left-0 right-0 md:sticky z-50">
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center md:hidden">
@@ -40,7 +40,7 @@ const Navigation = () => {
                 <Link href="/reviews" className="block text-gray-800 text-xs lg:text-sm xl:text-base px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 hover:transition-all duration-200 uppercase hover:font-bold">Reviews</Link>
               </li>
               <li className={(IsActive('/menu') ? 'active' : '') + (" justify-self-end")}>
-                <Link href="/menu" target="_blank" className="block text-gray-800 text-xs lg:text-sm xl:text-base px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 hover:transition-all duration-200 uppercase hover:font-bold">Menu</Link>
+                <Link href="https://heyzine.com/flip-book/6e1d53f488.html" target="_blank" className="block text-gray-800 text-xs lg:text-sm xl:text-base px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 hover:transition-all duration-200 uppercase hover:font-bold">Menu</Link>
               </li>
               <li className={(IsActive('/contact-us') ? 'active' : '') + (" justify-self-end")}>
                 <Link href="/contact-us" className="block text-gray-800 text-xs lg:text-sm xl:text-base px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 hover:transition-all duration-200 uppercase hover:font-bold">Contact Us</Link>
@@ -109,7 +109,7 @@ const Navigation = () => {
               <Link href="/reviews" className="block text-gray-800 px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 uppercase hover:font-bold">Reviews</Link>
             </li>
             <li className={IsActive('/menu') ? 'active' : ''}>
-              <Link href="/menu" className="disabled block text-gray-800 px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 uppercase hover:font-bold">Menu</Link>
+              <Link href="https://heyzine.com/flip-book/6e1d53f488.html" target="_blank" className="disabled block text-gray-800 px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 uppercase hover:font-bold">Menu</Link>
             </li>
             <li className={IsActive('/contact-us') ? 'active' : ''}>
               <Link href="/contact-us" className="block text-gray-800 px-5 py-2.5 hover:bg-red-700 hover:text-gray-100 uppercase hover:font-bold">Contact Us</Link>
@@ -120,5 +120,3 @@ const Navigation = () => {
     </nav>
   );
 };
-
-export default Navigation;
