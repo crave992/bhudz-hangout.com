@@ -41,3 +41,28 @@ ul li.active {
     color: #FFFFFF;
   }
 }
+
+.facebook {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.title-page {
+  background-image: url('/images/banner-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.gallery, .reviews {
+  background: url('/images/bar.jpg');
+  background-color: grey;
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

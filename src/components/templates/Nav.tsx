@@ -14,7 +14,7 @@ export default function Navigation() {
 
   const IsActive = (pathname: string) => usePathname() === pathname;
   return (
-    <nav className="bg-gray-100 w-full fixed top-0 left-0 right-0 md:sticky z-50">
+    <nav className="bg-gray-100 w-full fixed top-0 left-0 right-0 md:sticky z-50" data-aos="fade-up">
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center md:hidden">

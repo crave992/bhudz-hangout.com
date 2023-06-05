@@ -1,17 +1,24 @@
-import Banner from '@/components/templates/Banner'
+"use client"
+
 import '@/assets/styles/globals.scss'
-import { Header } from '@/components/templates/Header'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <html lang="en">
       <body className="home">
-        <Header/>
-        <Banner/>
         {children}
       </body>
     </html>

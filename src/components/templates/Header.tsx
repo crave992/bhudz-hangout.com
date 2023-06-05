@@ -1,9 +1,11 @@
+"use client"
 import { SocialIcon } from "react-social-icons";
 import Navigation from "./Nav";
+
 export const Header = () => {
   return  (
     <header className="flex flex-wrap flex-column">
-      <div className="container mx-auto py-2.5 w-full hidden md:block">
+      <div className="container mx-auto py-2.5 w-full hidden md:block" data-aos="fade-down">
         <div className="header-top flex justify-content-center items-center">
           <div className="header-top__left sm:w-1/4 w-full">
             <p className="uppercase text-sm text-red-700">Follow us</p>

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 export const metadata = {
   title: 'Home',
@@ -7,6 +6,9 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div id="main"></div>
+    
+    <div id="main">
+      
+    </div>
   )
 }
